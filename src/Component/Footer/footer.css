@@ -1,0 +1,73 @@
+.footer{
+    background-color: black;
+    width: 100%;
+}
+.footer-text1 p{
+    color: rgb(213, 206, 206);
+    padding: 50px 20px 0 20px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.footer-text1 .row{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.footer-sub{
+    padding-bottom: 20px;
+    font-size: 16px !important;
+}
+.footer-text1 .row ul li{
+    list-style: none;
+    font-size: 12px;
+    padding-top: 10px;
+    color: rgb(176, 165, 165);
+}
+.row ul{
+    display: block;
+    justify-content: space-between;
+    color: white;
+    font-size: 14px;
+}
+.footer-down a{
+    color: lightblue;
+    justify-content: space-between;
+    display: flex;
+    padding: 0px 5px 0px 5px;
+}
+.footer-down p{
+    color: azure;
+}
+.footer-down{
+    padding-bottom: 20px;
+}
+a .hover-line{
+    border-bottom: 4px solid black;
+} 
+.footer-line{
+    border-bottom: 0.5px solid white;
+    display: block;
+    padding-top: 10px;
+}
+.footer-last{
+    padding-top: 5px !important;
+}
+.footer-down .footer-last p{
+    font-size: 12px !important;
+}
+
+.footer-down a:hover{
+    border-bottom: 0.01px solid white;
+}
+.vertical-line{
+    border-left: 0.1px solid azure;
+    display: inline-block;
+    padding-left: 3px;
+    padding-right: 5px !important;
+    height: 14px;
+    margin: 0 auto;
+}
+.vertical-space{
+    padding-right: 20px;
+}

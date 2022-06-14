@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.man-body{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+.header{
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-top: -80px;
+}
+.navBar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 50px;
+    cursor: pointer;
+    margin: 30px;
+}
+.nav{
+    flex: 1;
+    text-align: right;
+}
+.nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+}
+.nav ul li a:hover{
+    color: blue;
+}
+.nav ul li a:active{
+    color: blue;
+}
+.row{
+    display: flex;
+    text-align: left;
+    justify-content: space-around;
+    margin: 50px 0px 10px 0px;
+}
+.col-1{
+    flex-direction: 40%;
+    position: relative;
+    margin-left: 0px !important;
+}
+.col-1 h2{
+    font-size: 50px;
+}
+.col-1 h3{
+    font-size: 30px;
+    color: #707070;
+    font-weight: 100;
+    margin: 20px 0 10px;
+}
+.col-1 p{
+    font-size: 16px;
+    color: #b7b7b7;
+    font-weight: 100;
+    margin: 30px 0;
+    font-size: 20px;
+}
+.col-2{
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+}
+.col-2 .iPhone1{
+    width: 90%;
+    cursor: pointer;
+    padding-left: 50px;
+}
+
+/* .color-image{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: black;
+    width: 80%;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
+} */
+.btn-buy{
+    width: 140px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: white;
+    background: linear-gradient(to right, black, grey);
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+
+}
+.col-3{
+    width: 98.2%;
+    background-color: #f5f5f7;
+}
+.col-3 h1{
+    display: flex;
+    font-size: 60px;
+    justify-content: center;
+    padding-top: 90px;
+    z-index: 1;
+}
+.col-3 .homeText1{
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-left: 25%;
+    padding-right: 25%;
+    justify-content: space-between;
+}
+.col-3 .previewBtn{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    border-style: solid;
+    border-radius: 20px;
+    font-size: 18px;
+    padding: 10px 20px 10px 20px;
+    margin: 20px 0 50px 40%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.imageBody{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-basis: 60%;
+}
+.imageBody .largeImg{
+    width: 81.5vw;
+    margin-top: -10px;
+}
+
+
+
+@media screen and (max-width:700px) {
+    img .logo{
+        z-index: 1;
+    }
+    .nav ul{
+        width: 100%;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+        margin-top: 10px;
+        background: linear-gradient(to right, black, grey);
+        color: white;
+    }
+    .nav ul li{
+        display: inline-block;
+        font-size: 13px;
+    }
+    ul li a{
+        color: white;
+    }
+    .row{
+        flex-direction: column-reverse;
+        margin: 50px 10px 0 0;
+        display: flex;
+        justify-content: center;
+    }
+    .col-1{
+        margin-top: -20px;
+    }
+    .col-2{
+        flex-basis: 100px;
+        margin: 10px 50px 50px 0px;
+    }
+    .imageBody{
+        margin-top: 10px;
+    }
+    .col-3 .previewBtn{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-left: 80px;
+    }
+    .iPhone1{
+        margin-top: -40px;
+    }
+}

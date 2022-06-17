@@ -5,7 +5,7 @@ export default function Footer() {
     <div className="footer"> 
                 <div className="footer-text1">
                     <p> Features are subject to change. Some features, applications and services may not be available in all regions or languages. </p>
-                    <div className="row">
+                    <div className="row1">
                         <div className="col-md-2">
                             <ul className="footer-sub"> Shop and Learn 
                                 <li> Store </li>

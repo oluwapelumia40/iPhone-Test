@@ -1,0 +1,22 @@
+.navBar{
+    justify-content: space-between;
+}
+.logo{
+    width: 50px !important;
+    cursor: pointer !important;
+    margin: 30px !important;
+}
+.nav ul li{
+    display: inline-block !important;
+    margin-right: 30px;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+}
+.nav ul li a:hover{
+    color: blue;
+}
+.nav ul li a:active{
+    color: blue;
+}

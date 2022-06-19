@@ -1,9 +1,13 @@
 import React from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import Footer from "./Component/Footer/Footer";
 import Header from "./Component/Header/Header";
 
 function Shop() {
+
+    const [color, setColor] = useState("red");
+
     return (
         <div>
             <Header/>
@@ -71,7 +75,27 @@ function Shop() {
             <div className="iphone-details">
                     <img src="/image/details-image.jpg"/>
                 </div>
-            
+            <div className="middle-text">
+                    <p> Ways to buy </p>
+            <div className="row buyText">
+                <div className="col-md-6">
+                    <h3> Trade in your smartphone for credit. </h3>
+                    <p> With Apple Trade In, you can get credit towards a new iPhone when you trade in an eligible smartphone.* It’s good for you and the planet. </p>
+                    <Link to=""> Learn more </Link> 
+                </div>
+
+                <div className="col-md-6">
+                    <h3> Why Apple is the best place to buy iPhone. </h3>
+                    <p> You can choose a payment option that works for you, pay less with a trade‑in, get set up quickly, and chat with a Specialist anytime. </p>
+                    <Link to=""> Learn more </Link>
+                </div>
+            </div>
+            </div>
+
+            <h1> The color will change {color}</h1>
+
+            <button type="button" onClick={() => setColor('green == pagination')}> click Me!</button>
+            <button type="button" onClick={() => setColor('black')}> click Me!</button>
 
             <Footer/>
         </div>

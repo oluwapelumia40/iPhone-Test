@@ -5,6 +5,16 @@ export default function Header() {
   return (
     <div className="navBar">
     <img src="/logo/appleLogo.png" className="logo"/>
+
+    <form>
+  <div class="input-group">
+    <input type="text" class="form-control search-box" placeholder="Search"/>
+      <button class="btn btn-dark search-btn" type="submit">
+        Search
+      </button>
+  </div>
+</form>
+
     <div className="nav">
         <ul>
          <li> <a href="/"> Home </a> </li>

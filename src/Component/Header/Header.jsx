@@ -19,7 +19,7 @@ export default function Header() {
         <ul>
          <li> <a href="/"> Home </a> </li>
          <li> <a href="/shop"> Shop </a> </li>
-         <li> <a href="/"> Add Cart </a> </li>
+         <li> <a href="/cart"> Add Cart </a> </li>
          <li> <a href="/"> Check Out </a> </li>
          <li> <a href="/"> Thank you </a> </li>
         </ul>

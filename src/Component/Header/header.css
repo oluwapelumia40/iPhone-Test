@@ -7,9 +7,13 @@
     cursor: pointer !important;
     margin: 30px !important;
 }
+.nav{
+    padding-right: 30px;
+    height: 2rem;
+}
 .nav ul li{
-    display: inline-block !important;
-    margin-right: 30px;
+    display: inline-block;
+    margin-right: 20px;
 }
 ul li a{
     text-decoration: none;
@@ -35,4 +39,24 @@ ul li a{
 }
 button:hover{
     background-color: rgb(71, 65, 65) !important;
+}
+.dropdownMenu{
+    cursor: pointer;
+    width: 60px;
+    display: block;
+}
+.dropDownList{
+    position: absolute;
+    border: 0.1px solid transparent;
+    border-radius: 2px;
+    width: 6%;
+}
+.dropDownList li a{
+    padding-left: 60px;
+    color: black !important;
+    display: flex;
+    justify-content: center;
+}
+.dropDownList li a:hover{
+    text-decoration: underline !important;
 }

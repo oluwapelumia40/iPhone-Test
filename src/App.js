@@ -8,6 +8,7 @@ import AddressDetails from './Component/CheckOut/AddressDetails';
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.css";
 
+
 function App() {
   return (
     <div className="App">

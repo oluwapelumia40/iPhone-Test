@@ -1,14 +1,32 @@
 import React from 'react'
 import Footer from './Component/Footer/Footer';
-import Header from './Component/Header/Header';
+import Header from './Component/Header/Header'; 
+import Button from '@mui/material/Button'; 
+import { useState } from 'react';
+import { useEffect } from 'react';
 
 function Cart() {
+
+    const [state, setState] = useState('Wealth')
+
+    console.log('render')
+    useEffect(()=> {
+    fetch(`https://jsonplaceholder.typicode.com/${state}`)
+    .then(response => response.json())
+    .then(json => console.log(json))
+    },[state])
+
   return (
         <div>
         <Header/>
 
         <div className="container">
-            <div className="cart1">
+
+        <Button onClick={()=> setState('Posts')} variant="contained"> Posts</Button>
+        <Button onClick={()=> setState('Holiness')} variant="contained">Holiness</Button>
+        <h1>{state}</h1>
+
+             <div className="cart1">
                 <img src='https://www.jumia.com.gh/assets_he/images/cart.668e6453.svg'/>
                 <h4> Your cart is empty! </h4>
                 <p> Browse our categories and discover our best deals!</p>

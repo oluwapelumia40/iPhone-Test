@@ -27,15 +27,21 @@ ul li a{
 }
 .search-box{
     width: 500px !important;
-    border-radius: 10px !important;
+    border-radius: 20px !important;
     box-shadow: none !important;
     margin-right: 10px !important;
+    border: 1px solid black;
+    padding: 6px;
+    display: flex;
+    align-items: center;
 }
-.search-btn{
-    width: 80px !important;
-    height: 35px;
-    border-radius: 10px !important;
-    box-shadow: none !important;
+.input-search{
+    width: 100% !important;
+    border: none !important;
+    font-size: 14px;
+}
+.input-search:focus{
+    outline: none;
 }
 button:hover{
     background-color: rgb(71, 65, 65) !important;
@@ -44,6 +50,12 @@ button:hover{
     cursor: pointer;
     width: 60px;
     display: block;
+}
+.dropdownMenu a{
+    color: black !important;
+}
+.dropdownMenu a:hover{
+    color: blue !important;
 }
 .dropDownList{
     position: absolute;

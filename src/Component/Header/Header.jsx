@@ -5,6 +5,7 @@ import "bootstrap"
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import SearchIcon from '@mui/icons-material/Search';
 import {BrowserRouter, Route, Routes } from 'react-router-dom'
+import { green } from '@mui/material/colors';
 
 export default function Header() {
   const [state, setAccount] = useState(false)
@@ -20,14 +21,10 @@ export default function Header() {
     <img src="/logo/appleLogo.png" className="logo"/>
 
 
-    
-    
-      <form>
-        <div class="input-group">      
-        <input type="text" class="form-control search-box" placeholder="Search"/>
-        <SearchIcon/>
-        </div>
-      </form>
+    <div className="search-box">
+      <input type="text" className='input-search' placeholder='Enter the Product Name'/>
+      <SearchIcon style={{cursor:'pointer'}}/>
+    </div>
 
     <div className="nav">
         <ul>
@@ -38,7 +35,7 @@ export default function Header() {
         </ul>
         
         <div className="dropdownMenu" onMouseEnter={showDropdown} onMouseLeave={hideDropdown}>
-        Account 
+        <a href='#'> Account</a> 
 
           {state ? (<div className="dropDownList" onMouseEnter={showDropdown}>
             <li> <a href='#'> Profile</a> </li>

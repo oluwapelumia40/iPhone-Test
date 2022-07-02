@@ -11,10 +11,10 @@ function Cart() {
 
     console.log('render')
     useEffect(()=> {
-    fetch(`https://jsonplaceholder.typicode.com/${state}`)
+    fetch(`https://jsonplaceholder.typicode.com/users${state}`)
     .then(response => response.json())
     .then(json => console.log(json))
-    },[state])
+    },[ ])
 
   return (
         <div>
@@ -22,8 +22,7 @@ function Cart() {
 
         <div className="container">
 
-        <Button onClick={()=> setState('Posts')} variant="contained"> Posts</Button>
-        <Button onClick={()=> setState('Holiness')} variant="contained">Holiness</Button>
+        <Button onClick={(e)=> setState('Posts')} variant="contained"> User</Button>
         <h1>{state}</h1>
 
              <div className="cart1">

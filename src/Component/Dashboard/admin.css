@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.leftMenu{
+    width: 250px;
+    height: 100%;
+    background: black;
+    position: fixed;
+}
+.menu_logo{
+    color: white;
+    position: absolute;
+    left: 90%;
+    top: 1%;
+    transform: translate(-50%);
+}
+.leftLogo img{
+    width: 40% !important;
+    border-radius: 50%;
+}
+.leftLogo h2{
+    text-transform: uppercase;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+.leftItem ul a{
+    display: block;
+    width: 100%;
+    height: inherit;
+    line-height: 50px;
+    font-size: 11px;
+    font-family: sans-serif;
+    padding-left: 20px;
+    box-sizing: border-box;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    color: white;
+}
+.leftItem ul li:hover{
+    padding-left: 20px;
+}
+.leftMenu ul a:hover{
+    border-radius: 25px;
+    background-color: white;
+    color: black;
+    transform: all 0.4s ease;
+}
+.row{
+    padding: 0;
+    margin: 0;
+}
+.topMenu{
+    background-color: black;
+    height: 60px;
+}
+.topMenu a{
+    color: rgb(242, 242, 242) !important;
+    font-size: 14px;
+    right: 20px;
+    position: absolute;
+    bottom: 600px;
+}
+.row1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 10px;
+    padding-left: 250px;
+    place-items: center;
+}
+.box1{
+    border: 1px transparent white;
+    width: 250px;
+    height: 200px;
+    margin-right: 10px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px 1px #aaaaaa;
+}
+.chartBox1{
+    padding-left: 15px;
+}
+.chart1{
+    height: 180px;
+    width: 30px;
+    background-color: black;
+    position: absolute;
+    top: 80px;
+}
+.chart2{
+    height: 150px;
+    width: 30px;
+    background-color: grey;
+    position: absolute;
+    top: 110px;
+    right: 980px;
+}
+.chart3{
+    height: 165px;
+    width: 30px;
+    background-color: blue;
+    position: absolute;
+    top: 95px;
+    right: 940px;
+}
+.table_box tr hr{
+    color: black;
+}

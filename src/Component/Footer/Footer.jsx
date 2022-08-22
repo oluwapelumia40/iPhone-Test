@@ -5,9 +5,9 @@ export default function Footer() {
     <div className="footer"> 
                 <div className="footer-text1">
                     <p> Features are subject to change. Some features, applications and services may not be available in all regions or languages. </p>
-                    <div className="row1">
-                        <div className="col-md-2">
-                            <ul className="footer-sub"> Shop and Learn 
+                        <div className='footer-table'>
+                        <div className='footer-table1'>
+                            <ul> Shop & Learn
                                 <li> Store </li>
                                 <li> Mac </li>
                                 <li> iPad </li>
@@ -18,34 +18,11 @@ export default function Footer() {
                                 <li> AirTag </li>
                                 <li> Accessories </li>
                                 <li> Gift Cards </li>
-                            </ul>
-                        </div>
+                            </ul> 
+                            </div>  
 
-                        <div className="col-md-2">
-                        <ul className="footer-sub">
-                                Services
-                                <li> Apple Music </li>
-                                <li> Apple TV+ </li>
-                                <li> Apple Fitness+ </li>
-                                <li> Apple News+ </li>
-                                <li> Apple Arcade </li>
-                                <li> iCloud </li>
-                                <li> Apple One </li>
-                                <li> Apple Pay </li>
-                                <li> Apple Books </li>
-                                <li> Apple Podcasts </li>
-                                <li> App Store </li>
-                            </ul>
-                        <ul className="footer-sub">
-                            Account
-                            <li> Manage Your Apple ID </li>
-                            <li> Apple Store Account </li>
-                            <li> iCloud.com </li>
-                        </ul>
-                        </div>
-
-                        <div className="col-md-2">
-                            <ul className="footer-sub"> Apple Store
+                        <div className='footer-table1'>
+                            <ul> Apple Store
                                 <li> Find a Store </li>
                                 <li> Genius Bar </li>
                                 <li> Today at Apple </li>
@@ -56,33 +33,50 @@ export default function Footer() {
                                 <li> Apple Trade In </li>
                                 <li> Order Status </li>
                                 <li> Shopping Help </li>
+                                </ul> </div> 
+
+                        <div className='footer-table1'>
+                            <ul>  Services
+                            <li> Apple Music </li>
+                                <li> Apple TV+ </li>
+                                <li> Apple Fitness+ </li>
+                                <li> Apple News+ </li>
+                                <li> Apple Arcade </li>
+                                <li> iCloud </li>
+                                <li> Apple One </li>
+                                <li> Apple Pay </li>
+                                <li> Apple Books </li>
+                                <li> Apple Podcasts </li>
+                                <li> App Store </li>
+                                    <ul className='table-sub'> Account</ul>
+                                <li> Manage Your Apple ID </li>
+                                <li> Apple Store Account </li>
+                                <li> iCloud.com </li>
+                                
                             </ul>
                         </div>
 
-                    <div className="col-md-2">
-                        <ul className="footer-sub"> For Business
-                            <li> Apple and Business </li>
-                            <li> Shop for Business </li>
-                        </ul>
-                        <ul className="footer-sub"> For Education
-                            <li> Apple and Education </li>
-                            <li> Shop for University </li>
-                        </ul>
-                        <ul className="footer-sub"> For Healthcare
-                            <li> Apple in Healthcare </li>
-                            <li> Health on Apple Watch </li>
-                            <li> Health Records on iPhone</li>
-                        </ul>
-                    </div>
+                        <div className='footer-table1'>
+                            <ul>For Business   
+                                <li> Apple and Business </li>
+                                <li> Shop for Business </li>
+                            <ul className='table-sub'> For Education </ul>
+                                <li> Apple and Education </li>
+                                <li> Shop for University </li>
+                            <ul className='table-sub'> For Healthcare </ul>
+                                <li> Apple in Healthcare </li>
+                                <li> Health on Apple Watch </li>
+                                <li> Health Records on iPhone</li>  
+                            </ul>
+                        </div>
 
-                    <div className="col-md-3">
-                        <ul className="footer-sub">Apple Values
+                        <div className='footer-table1'>
+                        <ul>Apple Values
                             <li> Accessibility </li>
                             <li> Environment </li>
                             <li> Privacy </li>
                             <li> Supplier Responsibility </li>
-                        </ul>
-                        <ul className="footer-sub">About Apple
+                        <ul className='table-sub'>About Apple </ul>
                             <li> Newsroom </li>
                             <li> Apple Leadership </li>
                             <li> Career Opportunities </li>
@@ -94,7 +88,7 @@ export default function Footer() {
                             <li> Contact Apple </li>
                         </ul>
                     </div>
-                    </div>   
+                 </div>
 
                     <div className="footer-down">
                         <p> More ways to shop: <a href='/'> find an Apple </a> Store or <a href='/'> other retailer</a> near you. Or call 0800 048 0408.</p>

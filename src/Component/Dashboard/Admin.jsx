@@ -1,5 +1,5 @@
 import React from 'react'
-import "./admin.css"
+import './admin.css'
 import "bootstrap"
 import { Link } from 'react-router-dom'
 import DashboardIcon from '@mui/icons-material/Dashboard';
@@ -10,11 +10,11 @@ import SupervisorAccountIcon from '@mui/icons-material/SupervisorAccount';
 import ConstructionIcon from '@mui/icons-material/Construction';
 import SettingsApplicationsIcon from '@mui/icons-material/SettingsApplications';
 import LogoutIcon from '@mui/icons-material/Logout';
-import ViewSidebarIcon from '@mui/icons-material/ViewSidebar';
+import MenuIcon from '@mui/icons-material/Menu';
 import { useState } from 'react';
 
-export default function Admin() {
-    const[tool, setTool] = useState(false)
+function Admin() {
+    const [tool, setTool] = useState(false)
     const showTool=()=> {
         setTool(true);
     }
@@ -24,12 +24,13 @@ export default function Admin() {
     
   return (
         <div className="body">
-            <div className="leftMenu">
+            <div className="leftMenu">   
                 <div className="leftLogo">
+                    <span className='menu_logo'> <MenuIcon/> </span>
                     <img src="/logo/appleLogo.png" className="logo"/>
                     <h2>administration </h2>
                 </div>
-                    <div className="leftItem">
+                    <div className="leftItem"> 
                 <ul>
                     <li> <Link to=""> <DashboardIcon/> DashBoard </Link> </li>
                     <li> <Link to=""> <PaymentIcon/> Payment </Link> </li>
@@ -50,13 +51,25 @@ export default function Admin() {
             </ul>
         </div> 
         </div>
-
-       <div className="row">
-       <div className="topMenu">
-                <span> <Link></Link>  </span>
+            <div className="row">
+                <div className="topMenu">
                     <Link to=""> <LogoutIcon/> Logout</Link>        
-        </div>
-       </div>
+                </div>
+            </div>
+
+            <div className="row row1">
+                <div className="col-md-3 box1">
+                    <div className="row chartBox1">
+                        <section className='chart1'></section>
+                        <section className='chart2'></section>
+                        <section className='chart3'></section>
+                    </div>
+                </div>
+
+                <div className="col-md-3 box1"></div>
+                <div className="col-md-3 box1"></div>
+                <div className="col-md-3 box1"></div>
+            </div>
     </div>
   )
-}
+} export default Admin

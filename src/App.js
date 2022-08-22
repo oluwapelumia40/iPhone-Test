@@ -7,7 +7,7 @@ import Login from './Component/Account/Login';
 import AddressDetails from './Component/CheckOut/AddressDetails';
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.css";
-import Admin from './Admin/Admin';
+import Admin from './Component/Dashboard/Admin';
 
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
           <Route path="/form" exact element ={<Form/>}/>
           <Route path="/login" exact element ={<Login/>}/>
           <Route path="/address" exact element ={<AddressDetails/>}/>
-          <Route path="/admin" exact element={<Admin/>}/>
+          <Route path="/admin" exact element ={<Admin/>}/>
         </Routes>
       </BrowserRouter>
     </div>
